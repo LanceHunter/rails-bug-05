@@ -8,6 +8,7 @@ class TasksController < ApplicationController
 
   def edit
     @task = Task.find(params[:id])
+    p "This is the task -", @task
   end
 
   def create
